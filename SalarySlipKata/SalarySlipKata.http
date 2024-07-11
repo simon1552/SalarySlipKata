@@ -1,0 +1,6 @@
+@SalarySlipKata_HostAddress = http://localhost:5141
+
+GET {{SalarySlipKata_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
