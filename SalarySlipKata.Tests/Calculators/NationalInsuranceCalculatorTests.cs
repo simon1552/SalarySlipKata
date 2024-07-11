@@ -34,7 +34,8 @@ namespace SalarySlipKata.Tests.Calculators
             var result = subject.Calculate(salary);
             //Assert
 
-            var expectedNationalInsuranceContribution = (salary * 0.12M) /12;
+            var taxableAmount = salary - 8060;
+            var expectedNationalInsuranceContribution = (taxableAmount * 0.12M) /12;
 
 
             result.Should().Be(expectedNationalInsuranceContribution);

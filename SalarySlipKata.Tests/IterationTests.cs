@@ -18,6 +18,8 @@ namespace SalarySlipKata.Tests
 
             decimal expectedMonthlyGrossSalary = 416.67M;
             result.monthlyGrossSalary.Should().Be(expectedMonthlyGrossSalary);
+            result.nationalInsuranceContributions.Should().Be(0);
+
         }
         [Fact]
         public void Iteration2()

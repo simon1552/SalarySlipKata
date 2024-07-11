@@ -13,8 +13,7 @@ namespace SalarySlipKata
         }
         public SalarySlip GenerateFor(Employee employee)
         {
-            var nationalInsuranceContribution = _nationalInsuranceCalculator.Calculate(employee.annualGrossSalary);
-            
+            var nationalInsuranceContribution = _nationalInsuranceCalculator.Calculate(employee.annualGrossSalary);            
 
            var salarySlip = new SalarySlip(employee.id, employee.name, Decimal.Round(employee.annualGrossSalary / 12 , 2), nationalInsuranceContribution);
            return salarySlip;
